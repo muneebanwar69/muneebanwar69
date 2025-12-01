@@ -1,0 +1,83 @@
+name: Generate Contribution Snake
+
+# ═══════════════════════════════════════════════════════════════════
+# 🐍 ADVANCED SNAKE ANIMATION - MULTI-COLOR & SUPER ATTRACTIVE
+# ═══════════════════════════════════════════════════════════════════
+
+on:
+  # Runs automatically every 12 hours
+  schedule:
+    - cron: "0 */12 * * *"
+  
+  # Allows manual trigger from Actions tab
+  workflow_dispatch:
+  
+  # Runs on every push to main branch
+  push:
+    branches:
+      - main
+
+jobs:
+  generate:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    
+    steps:
+      # ═══════════════════════════════════════════════════════════
+      # Step 1: Checkout Repository
+      # ═══════════════════════════════════════════════════════════
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+      
+      # ═══════════════════════════════════════════════════════════
+      # Step 2: Generate Multiple Snake Animations (10 Variants)
+      # ═══════════════════════════════════════════════════════════
+      - name: Generate Snake Animation - All Variants
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-snake.svg
+            dist/github-snake-dark.svg?palette=github-dark
+            dist/ocean.svg?color_snake=cyan&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
+            dist/neon.svg?color_snake=#00ff41&color_dots=#ff006e,#fb5607,#ffbe0b,#8338ec,#3a86ff
+            dist/purple-dream.svg?color_snake=#b388ff&color_dots=#ea80fc,#e040fb,#d500f9,#aa00ff,#6200ea
+            dist/fire.svg?color_snake=#ff4444&color_dots=#ff6b35,#f7931e,#fdc500,#c1121f,#780000
+            dist/matrix.svg?color_snake=#00ff00&color_dots=#003300,#004d00,#006600,#008000,#00ff00
+            dist/cyberpunk.svg?color_snake=#ff00ff&color_dots=#00ffff,#ff00ff,#ffff00,#00ff00,#ff0000
+            dist/sunset.svg?color_snake=#ff6b6b&color_dots=#ee5a6f,#f06292,#ba68c8,#9575cd,#7986cb
+            dist/arctic.svg?color_snake=#00d9ff&color_dots=#e3f2fd,#bbdefb,#90caf9,#42a5f5,#1e88e5
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      # ═══════════════════════════════════════════════════════════
+      # Step 3: Show Generated Files (for debugging)
+      # ═══════════════════════════════════════════════════════════
+      - name: Show Generated Files
+        run: ls -la dist/
+      
+      # ═══════════════════════════════════════════════════════════
+      # Step 4: Push to Output Branch
+      # ═══════════════════════════════════════════════════════════
+      - name: Push Snake Animations to Output Branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: output
+          build_dir: dist
+          commit_message: "🐍 Update snake animations"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      # ═══════════════════════════════════════════════════════════
+      # Step 5: Success Notification
+      # ═══════════════════════════════════════════════════════════
+      - name: Success Message
+        run: |
+          echo "════════════════════════════════════════════════════"
+          echo "✅ Snake animations generated successfully!"
+          echo "📊 Total variants: 10"
+          echo "🎨 Themes: Default, Dark, Ocean, Neon, Purple Dream,"
+          echo "          Fire, Matrix, Cyberpunk, Sunset, Arctic"
+          echo "════════════════════════════════════════════════════"
