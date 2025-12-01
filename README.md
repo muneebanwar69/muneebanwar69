@@ -244,14 +244,85 @@ mindmap
 
 ---
 
-## 🐍 Contribution Snake
+## 🐍 Contribution Snake - Multi-Theme Gallery
 
 <div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/muneebanwar69/muneebanwar69/output/github-contribution-grid-snake-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/muneebanwar69/muneebanwar69/output/github-contribution-grid-snake.svg">
-    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/muneebanwar69/muneebanwar69/output/github-contribution-grid-snake.svg">
-  </picture>
+
+### 🎨 Choose Your Favorite Animation! (Click to Explore All 10 Themes)
+
+<details>
+<summary><b>👉 View All Snake Themes 🌈</b></summary>
+
+<br>
+
+<table>
+<tr>
+<td align="center" width="50%">
+<b>🌊 Ocean Theme</b><br>
+<img src="https://raw.githubusercontent.com/muneebanwar69/muneebanwar69/output/ocean.svg" alt="Ocean Snake" width="100%"/>
+</td>
+<td align="center" width="50%">
+<b>✨ Neon Theme</b><br>
+<img src="https://raw.githubusercontent.com/muneebanwar69/muneebanwar69/output/neon.svg" alt="Neon Snake" width="100%"/>
+</td>
+</tr>
+
+<tr>
+<td align="center" width="50%">
+<b>💜 Purple Dream Theme</b><br>
+<img src="https://raw.githubusercontent.com/muneebanwar69/muneebanwar69/output/purple-dream.svg" alt="Purple Dream Snake" width="100%"/>
+</td>
+<td align="center" width="50%">
+<b>🔥 Fire Theme</b><br>
+<img src="https://raw.githubusercontent.com/muneebanwar69/muneebanwar69/output/fire.svg" alt="Fire Snake" width="100%"/>
+</td>
+</tr>
+
+<tr>
+<td align="center" width="50%">
+<b>💚 Matrix Theme</b><br>
+<img src="https://raw.githubusercontent.com/muneebanwar69/muneebanwar69/output/matrix.svg" alt="Matrix Snake" width="100%"/>
+</td>
+<td align="center" width="50%">
+<b>🎆 Cyberpunk Theme</b><br>
+<img src="https://raw.githubusercontent.com/muneebanwar69/muneebanwar69/output/cyberpunk.svg" alt="Cyberpunk Snake" width="100%"/>
+</td>
+</tr>
+
+<tr>
+<td align="center" width="50%">
+<b>🌅 Sunset Theme</b><br>
+<img src="https://raw.githubusercontent.com/muneebanwar69/muneebanwar69/output/sunset.svg" alt="Sunset Snake" width="100%"/>
+</td>
+<td align="center" width="50%">
+<b>❄️ Arctic Theme</b><br>
+<img src="https://raw.githubusercontent.com/muneebanwar69/muneebanwar69/output/arctic.svg" alt="Arctic Snake" width="100%"/>
+</td>
+</tr>
+
+<tr>
+<td align="center" width="50%">
+<b>🖤 Dark Theme</b><br>
+<img src="https://raw.githubusercontent.com/muneebanwar69/muneebanwar69/output/github-snake-dark.svg" alt="Dark Snake" width="100%"/>
+</td>
+<td align="center" width="50%">
+<b>⚪ Light Theme</b><br>
+<img src="https://raw.githubusercontent.com/muneebanwar69/muneebanwar69/output/github-snake.svg" alt="Light Snake" width="100%"/>
+</td>
+</tr>
+</table>
+
+</details>
+
+### ⭐ Featured: Arctic Theme
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/muneebanwar69/muneebanwar69/output/arctic.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/muneebanwar69/muneebanwar69/output/ocean.svg">
+  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/muneebanwar69/muneebanwar69/output/arctic.svg">
+</picture>
+
+<sub>💡 10 unique themes • Auto-updates every 12 hours • Click above to see all variants!</sub>
+
 </div>
 
 ---
